@@ -28,14 +28,14 @@ app.use("/api/auth", authRouter);
 app.use("/api/messages", messageRouter);
 
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "../frontend/dist")));
+  app.use(express.static(path.join(__dirname, "../Frontend/dist")));
 
-  app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "../frontend", "dist", "index.html"));
+  app.get((req, res) => {
+    res.sendFile(path.join(__dirname, "../Frontend", "dist", "index.html"));
   });
 }
 
 server.listen(PORT, () => {
-  console.log("server started on port http://localhost:8000");
+  console.log(`Server started on port ${PORT}`);
   connectDB();
 });
