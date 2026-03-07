@@ -4,7 +4,7 @@ import HomePage from "./pages/HomePage.jsx";
 import SignUpPage from "./pages/SignupPage.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
 import SettingsPage from "./pages/SettingsPage.jsx";
-import ProfilePage from "./pages/profilepage.jsx";
+import ProfilePage from "./pages/ProfilePage.jsx";
 import { Navigate, Route, Routes } from "react-router-dom";
 import { useAuthStore } from "./store/useAuth.Store.js";
 import { useEffect } from "react";
