@@ -107,7 +107,7 @@ export default function LoginPage (){
             <div className="text-center">
               <p className="text-base-content/60">
                 Don't have account ?
-                <Link to="/signup" className="link link-primary"> Sign in </Link>
+                <Link to="/signup" className="link link-primary"> Sign up </Link>
               </p>
             </div>
         </div>
