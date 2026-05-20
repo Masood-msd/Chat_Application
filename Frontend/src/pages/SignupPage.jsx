@@ -142,7 +142,7 @@ export default function SignUpPage() {
                   Loading...
                 </>
               ) : (
-                "create Account"
+                "Create Account"
               )}
             </button>
           </form>

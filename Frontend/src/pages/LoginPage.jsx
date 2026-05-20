@@ -2,6 +2,7 @@ import { useState } from "react"
 import { useAuthStore } from "../store/useAuth.Store";
 import { CircleDashed, Eye, EyeOff, KeyRound, Mail, MessageSquare } from "lucide-react";
 import { Link } from "react-router-dom";
+import AuthImagePattern from "../components/authImagePattern";
 
 export default function LoginPage (){
      const [showPassword, setShowPassword] = useState(false)
@@ -111,11 +112,11 @@ export default function LoginPage (){
             </div>
         </div>
       </div>
-      {/* Right side Part
+      {/* Right side Part */}
 
       <AuthImagePattern 
       title="Join our Community"
-      subTitle="Connect with friends and many others"/> */}
+      subTitle="Connect with friends and many others"/>
     </div>
   );
 }
